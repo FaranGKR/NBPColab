@@ -1,11 +1,29 @@
 /* Global CSS */
+@font-face {
+    font-family: 'ArticulatCF';
+    src: url('font/ArticulatCF-Regular.woff2') format('woff');
+         /* url('font/ArticulatCF-Regular.woff2') format('woff2'),
+         url('articulat-cf-bold.ttf') format('truetype'); */
+    /* font-weight: bold;
+    font-style: normal; */
+  }
+  
+  @font-face {
+    font-family: 'ArticulatCF';
+    src: url('font/ArticulatCF-Bold.woff') format('woff'),
+         url('font/ArticulatCF-Regular.woff2') format('woff2'),
+         url('articulat-cf-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+   
 
 body{
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  'ArticulatCF',Arial, Helvetica, sans-serif;
     color: #000;
-    font-size:16px;
+    /* font-size:16px; */
 }
 p{
     margin: 0px;
@@ -43,44 +61,65 @@ h1,h2,h3,h4,h5,h6{
 .top-header{
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items:flex-start;
 }
-.top-header .logo{
+/* .top-header .logo{
     flex: 2;
-}
+} */
 .top-header .logo img{
-    width: 300px;
+    width: 158pt;
    
-    padding-left: 16px;
+    /* padding-left: 16px; */
 }
 .top-header h3{
-    padding-right: 16px;
+    font-family: "ArticulatCF" ;
+    font-size: 12t;
+   
+    
 }
 
 .top-header p{
-    padding: 16px;
-}
+    font-family: "ArticulatCF" ;
+    margin: 2.25rem 0rem 1.25rem 0rem;
+    font-size: 10pt;
+    font-weight: normal;
+} 
 
 
 /* Header Class CSS */
 .header{
-    background-color: #0d650d;
+    background-color: #009951;
+    border-top-left-radius: 2px ;
+    border-top-right-radius: 2px;
+   
 }
 .header .header-text{
     color: #fff;
-    font-size: 16px;
+    font-size: 10pt;
     font-weight: 600;
-    padding: 16px;
+    padding: 12pt 16pt;
 }
 
 .sub-header{
-    background-color: #daf4da;
+    background-color: #ccebdc;
 }
 .sub-header .header-text{
     color: #000000;
-    font-size: 16px;
+    font-family: "ArticulatCF";
+    font-size: 9pt;
     font-weight: 500;
-    padding:10px 16px;
+    padding:11pt 16pt;
+}
+
+/* Footer Css */
+.footer{
+    display: block;
+    margin-top:20px ;
+}
+.footer p{
+    float: right;
+    font-size: 10pt;
+    /* margin-top: 25pt; */
 }
 
 /* Table Header Css */
@@ -92,17 +131,20 @@ table tr{
     text-align: left;  
 }
 table tr:nth-child(even){
-    background-color: #f1f1f1;
+    background-color: #f8f8f8;
 }
 table tr td{
     width: 50%;
-    padding:10px 16px;
+    padding:11pt 16pt;
+    font-family: "ArticulatCF";
+    font-size: 8pt;
+    font-weight: 500;
     color: #000000;
 }
 
 /* page-break */
 .page-break{
-    page-break-after: always;
+    page-break-before: always;
 }
 
 
