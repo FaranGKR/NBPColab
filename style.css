@@ -147,3 +147,12 @@ table tr td{
     page-break-before: always;
 }
 
+
+
+
+
+/* AOF Pages */
+.table-row{
+    background-color: #7e4fc1;
+    width: 10%;
+}
