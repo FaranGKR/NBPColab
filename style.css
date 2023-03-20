@@ -2,10 +2,6 @@
 @font-face {
     font-family: 'ArticulatCF';
     src: url('font/ArticulatCF-Regular.woff2') format('woff');
-         /* url('font/ArticulatCF-Regular.woff2') format('woff2'),
-         url('articulat-cf-bold.ttf') format('truetype'); */
-    /* font-weight: bold;
-    font-style: normal; */
   }
   
   @font-face {
@@ -16,8 +12,6 @@
     font-weight: bold;
     font-style: normal;
   }
-   
-
 body{
     margin: 0px;
     padding: 0px;
@@ -25,19 +19,16 @@ body{
     color: #000;
     /* font-size:16px; */
 }
-p{
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "articulatCF";
+    color: #000000;
     margin: 0px;
     padding: 0px;
 }
-h1,h2,h3,h4,h5,h6{
-    margin: 0px;
-    padding: 0px;
-}
-
 /* Main Page CSS */
-.main-page{
+/* .main-page{
     text-align: center;
-    /* font-size:25px; */
+    font-size:25px;
 }
 .main-page h1{
     margin: 20px 0px;
@@ -46,45 +37,44 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     margin-top: 450px;
     line-height: 1.5rem;
-}
+} */
 
 /* Img Css */
-.main-page img{
+/* .main-page img{
     display: block;
     margin:0px auto;
     width: 70%;
     margin-top: 100px;
-}
-
-/* Logo Hedaer CSS */
-
-.top-header{
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-start;
-}
-/* .top-header .logo{
-    flex: 2;
 } */
-.top-header .logo img{
-    width: 158pt;
-   
-    /* padding-left: 16px; */
-}
-.top-header h3{
-    font-family: "ArticulatCF" ;
-    font-size: 12t;
-   
-    
-}
 
-.top-header p{
-    font-family: "ArticulatCF" ;
+header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* background-color: #f2f2f2; */
+    /* padding: 10px; */
+  }
+  
+  .logo-container img {
+    max-width: 158pt;
+    height: auto;
+  }
+  .heading-container {
+    text-align: right;
+  }
+  
+  .heading-container h1 {
+    font-size: 12pt;
+    font-weight: bolder;
+    margin: 0;
+  }
+  .heading-container p {
+    font-size: 10pt;
+  }
+  .text-container p {
     margin: 2.25rem 0rem 1.25rem 0rem;
     font-size: 10pt;
-    font-weight: normal;
-} 
-
+  }
 
 /* Header Class CSS */
 .header{
@@ -112,15 +102,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* Footer Css */
-.footer{
+/* .footer{
     display: block;
     margin-top:20px ;
 }
 .footer p{
     float: right;
     font-size: 10pt;
-    /* margin-top: 25pt; */
-}
+} */
 
 /* Table Header Css */
 table{
@@ -146,4 +135,34 @@ table tr td{
 .page-break{
     page-break-before: always;
 }
+/* NBP - COB - CRS Form CSS */
+.confirmation p{
+    font-family: "ArticulatCF";
+    font-size: 8pt;
+    font-weight: 500;
+    padding:12pt 16pt;
+}
+.note p{
+    font-family: "ArticulatCF";
+    font-size: 8pt;
+    font-weight: 500;
+    padding:12pt 16pt;
+}
+.signature{
+    display: flex;
+    justify-content: space-between;
 
+}
+.signature1{
+    display: flex;
+    justify-content: flex-start;
+    font-family: "ArticulatCF";
+    font-size: 8pt;
+    font-weight: 500;
+    padding:12pt 16pt;
+}
+.signature-line{
+    width: 200px;
+    margin-left: 3pt;
+    border-bottom: solid 1px #979797;
+}
