@@ -19,7 +19,7 @@ body{
     color: #000;
     /* font-size:16px; */
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,ul,li{
     font-family: "articulatCF";
     color: #000000;
     margin: 0px;
@@ -81,7 +81,8 @@ header {
     background-color: #009951;
     border-top-left-radius: 2px ;
     border-top-right-radius: 2px;
-   
+    display: flex;
+    justify-content: space-between;
 }
 .header .header-text{
     color: #fff;
@@ -90,8 +91,11 @@ header {
     padding: 12pt 16pt;
 }
 
+
 .sub-header{
     background-color: #ccebdc;
+    display: flex;
+    justify-content: space-between;
 }
 .sub-header .header-text{
     color: #000000;
@@ -112,17 +116,17 @@ header {
 } */
 
 /* Table Header Css */
-table{
+.tbl-2col{
     width: 100%;
     border-spacing: 0px;
 }
-table tr{
+.tbl-2col tr{
     text-align: left;  
 }
-table tr:nth-child(even){
+.tbl-2col tr:nth-child(even){
     background-color: #f8f8f8;
 }
-table tr td{
+.tbl-2col tr td{
     width: 50%;
     padding:11pt 16pt;
     font-family: "ArticulatCF";
@@ -137,9 +141,11 @@ table tr td{
 }
 /* NBP - COB - CRS Form CSS */
 .confirmation p{
+    
     font-family: "ArticulatCF";
     font-size: 8pt;
     font-weight: 500;
+
     padding:12pt 16pt;
 }
 .note p{
@@ -156,13 +162,201 @@ table tr td{
 .signature1{
     display: flex;
     justify-content: flex-start;
+    /* align-items: flex-end; */
     font-family: "ArticulatCF";
     font-size: 8pt;
     font-weight: 500;
     padding:12pt 16pt;
+}
+.signature2{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    font-family: "ArticulatCF";
+    font-size: 8pt;
+    font-weight: 500;
+    padding:12pt 16pt;
+}
+.signature2 p{
+    width: 47pt;
+}
+.signature2 .p-signatiure2{
+    margin-top: 9pt;
+}
+.signature2 .signature-line{
+    width: 200px;
+    margin-left: 3pt;
+    border-bottom: solid 1px #979797;
 }
 .signature-line{
     width: 200px;
     margin-left: 3pt;
     border-bottom: solid 1px #979797;
 }
+
+
+/* Undertaking form CSS */
+.list p{
+    padding:12pt 16pt;
+    font-family: ArticulatCF;
+    font-size: 8pt;
+    font-weight: 500;
+}
+.list ul{
+    padding:0pt 16pt 12pt 16pt;
+    font-family: ArticulatCF;
+    font-size: 8pt;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+.list ul li{
+    list-style: none;
+}
+
+/* AOF CSS */
+.tbl-3col{
+    width: 100%;
+    border-spacing: 0px;
+    font-size: 8pt;
+    font-weight: 500;
+}
+/* .tbl-2col tr{
+    text-align: left;  
+} */
+.header .urdu-text{
+    color: #fff;
+    font-size: 8.1pt;
+    font-weight: 600;
+    padding: 8pt 16pt;
+    font-family: "Noto Nastaliq Urdu";
+}
+.sub-header .urdu-text{
+    color: #000000;
+    font-family: "Noto Nastaliq Urdu";
+    font-size: 7.2pt;
+    font-weight: 500;
+    padding: 6pt 16pt;
+}
+
+.tbl-3col tr:nth-child(even){
+    background-color: #f8f8f8;
+}
+.tbl-3col tr .col-1{
+    width: 25% !important;
+    padding: 10pt 16pt;
+    font-family: "ArticulatCF";
+}
+.tbl-3col tr .col-2{
+    width: 45% !important;
+    padding:10pt 16pt;
+    font-family: "ArticulatCF";
+}
+/* .tbl-3col tr .col-3{
+    width: 40% !important;
+    padding:11pt 16pt;
+} */
+
+.tbl-3col tr td:last-child {
+    text-align: right;
+    font-size: 7.2pt;
+    font-family: "Noto Nastaliq Urdu";
+    padding:6pt 16pt;
+}
+
+.urdu-table{
+    display: flex;
+    justify-content: space-between;
+}
+.urdu-table .urdu-text{
+    color: #000000;
+    font-family: "Noto Nastaliq Urdu";
+    font-size: 5.2pt;
+    font-weight: 500;
+    padding: 6pt 16pt;
+}
+.urdu-table .header-text{
+    color: #000000;
+    width: 50%;
+    font-size: 7pt;
+    padding: 8pt 100pt 8pt 16pt;
+}
+.tbl-2colLeftRight {
+    width: 100%;
+  }
+  .tbl-2colLeftRight tr:nth-child(even){
+    background-color: #f8f8f8;
+    }   
+  .tbl-2colLeftRight tr td{
+    width: 50%;
+    padding:10pt 16pt;
+    font-family: "ArticulatCF";
+    font-size: 8pt;
+  }
+
+  .tbl-2colLeftRight tr td:last-child {
+    text-align: right;
+    font-size: 7.2pt;
+    font-family: "Noto Nastaliq Urdu";
+    padding:6pt 16pt;
+  }
+  .account .account-holder{
+    font-family: "Noto Nastaliq Urdu";
+    line-height: 2.8;
+    font-size: 7pt;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .photo-account{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .photo-account .photograph{
+    width: 134pt;
+    height: 147pt;
+    margin: 16pt 20pt;
+    
+    background-color: #f8f8f8;
+  }
+  .photo-account .photograph p{
+    color: #000;
+    font-size: 8pt;
+    font-family: "ArticulatCF";
+    text-align: center;
+    padding: 54px 19px;
+    line-height: 1.1rem;
+  }
+  .photo-account .signature{
+    padding: 16pt;
+  }
+  .photo-account .signature p{
+    font-family: ArticulatCF;
+    font-size: 8px;
+    font-weight: 600;
+  }
+  .photo-account .line {
+    width: 178pt;
+    height: 1pt;
+    border-top: solid 1px #979797;
+  }
+
+  .confirmation .bank-use{
+    font-family: "Noto Nastaliq Urdu";
+    line-height: 2.8;
+    font-size: 7pt;
+    letter-spacing: 0.5px;
+    text-align: right;
+    margin: 0px;
+    padding: 0px;
+    padding: 0pt 16pt;
+}
+
+.branch-line{
+    width: 107pt;
+    margin-left: 3pt;
+    border-bottom: solid 1px #979797;
+  }
