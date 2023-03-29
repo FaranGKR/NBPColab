@@ -18,6 +18,7 @@
   }
    
 
+
 body{
     margin: 0px;
     padding: 0px;
@@ -88,12 +89,16 @@ h1,h2,h3,h4,h5,h6{
 
 /* Header Class CSS */
 .header{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
     background-color: #009951;
     border-top-left-radius: 2px ;
     border-top-right-radius: 2px;
    
 }
 .header .header-text{
+   
     color: #fff;
     font-size: 10pt;
     font-weight: 600;
@@ -152,7 +157,33 @@ table tr td{
 
 
 /* AOF Pages */
-.table-row{
+/* .table-row{
     background-color: #7e4fc1;
     width: 10%;
+} */
+/* .header .header-text-2{
+   
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 600;
+    padding: 12pt 16pt;
+    text-align: end;
+} */
+
+
+
+
+#td1{
+    width: 30%;
+    padding:11pt 16pt;
+    font-family: "ArticulatCF";
+    font-size: 8pt;
+    font-weight: 500;
+    color: #000000;
+    width: 20%;
+}
+
+
+.td1{
+    width: 500px;
 }
